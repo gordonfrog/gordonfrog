@@ -31,6 +31,9 @@ DELETE http://localhost:8080/users/10
 http://localhost:8080/users/all
 
 
+--
+
+
 dockerized/containerized gordonfrog using mysql testing:
 
 localhost
@@ -111,6 +114,9 @@ use gordonfrog
 show tables;
 
 select * from user;
+
+
+--
 
 
 kubernets using mongodb testing:
