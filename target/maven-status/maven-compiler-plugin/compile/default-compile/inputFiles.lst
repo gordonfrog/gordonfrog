@@ -1,0 +1,14 @@
+/Users/Shared/HOME/k8s/microservices/Lelek/src/main/java/com/gordonfrog/controller/UserController.java
+/Users/Shared/HOME/k8s/microservices/Lelek/src/main/java/com/gordonfrog/service/UserServiceLocal.java
+/Users/Shared/HOME/k8s/microservices/Lelek/src/main/java/com/gordonfrog/service/UserInMemDB.java
+/Users/Shared/HOME/k8s/microservices/Lelek/src/main/java/com/gordonfrog/repository/UserCRUDRepository.java
+/Users/Shared/HOME/k8s/microservices/Lelek/src/main/java/com/gordonfrog/MySQL_DataLoader.java
+/Users/Shared/HOME/k8s/microservices/Lelek/src/main/java/com/gordonfrog/repository/UserMongoRepository.java
+/Users/Shared/HOME/k8s/microservices/Lelek/src/main/java/com/gordonfrog/service/UserServiceK8s.java
+/Users/Shared/HOME/k8s/microservices/Lelek/src/main/java/com/gordonfrog/Swagger2Conf.java
+/Users/Shared/HOME/k8s/microservices/Lelek/src/main/java/com/gordonfrog/service/UserServiceDocker.java
+/Users/Shared/HOME/k8s/microservices/Lelek/src/main/java/com/gordonfrog/Application.java
+/Users/Shared/HOME/k8s/microservices/Lelek/src/main/java/com/gordonfrog/MongoDB_DataLoader.java
+/Users/Shared/HOME/k8s/microservices/Lelek/src/main/java/com/gordonfrog/model/User.java
+/Users/Shared/HOME/k8s/microservices/Lelek/src/main/java/com/gordonfrog/MyConfiguration.java
+/Users/Shared/HOME/k8s/microservices/Lelek/src/main/java/com/gordonfrog/service/UserService.java

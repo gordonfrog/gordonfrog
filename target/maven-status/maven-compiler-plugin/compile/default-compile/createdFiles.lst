@@ -1,0 +1,14 @@
+com/gordonfrog/model/User.class
+com/gordonfrog/service/UserServiceK8s.class
+com/gordonfrog/repository/UserCRUDRepository.class
+com/gordonfrog/controller/UserController.class
+com/gordonfrog/Swagger2Conf.class
+com/gordonfrog/MongoDB_DataLoader.class
+com/gordonfrog/Application.class
+com/gordonfrog/service/UserServiceDocker.class
+com/gordonfrog/MyConfiguration.class
+com/gordonfrog/service/UserService.class
+com/gordonfrog/repository/UserMongoRepository.class
+com/gordonfrog/service/UserInMemDB.class
+com/gordonfrog/MySQL_DataLoader.class
+com/gordonfrog/service/UserServiceLocal.class

@@ -1,0 +1,28 @@
+server:
+  port: 9090
+
+#Need this here and in bootstrap.yml
+spring:
+  application:
+    name: gordonfrog
+  datasource:
+    url: jdbc:mysql://mysql:3306/gordonfrog
+    username: root
+    password: password
+  jpa: 
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+
+ribbon:
+  ServerListRefreshInterval: 1000
+
+endpoints:
+  health:
+    sensitive: false
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
