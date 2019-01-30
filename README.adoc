@@ -31,10 +31,9 @@ DELETE http://localhost:8080/users/10
 http://localhost:8080/users/all
 
 
-*****************************************
-*****************************************
-*****************************************
-
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
 dockerized/containerized gordonfrog using mysql testing:
 
@@ -118,9 +117,9 @@ show tables;
 select * from user;
 
 
-*****************************************
-*****************************************
-*****************************************
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
 
 kubernets using mongodb testing:
