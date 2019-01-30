@@ -1,11 +1,16 @@
 gordonfrog project
 
-1. unit and local testing:
-localhost:8080/
+
+localhost:8080
+
 http://localhost:8080/swagger-ui.html#/user45controller
+
 http://localhost:8080/users/all
+
 http://localhost:8080/users?name=Phil%20Herold
+
 http://localhost:8080/users/1
+
 POST http://localhost:8080/users
 {
     "id": 10,
@@ -13,23 +18,31 @@ POST http://localhost:8080/users
 	"title": "Web Developer",
 	"department": "BigData Analytics"
 }
+
 PUT http://localhost:8080/users/10
 {
     "name": "Will Gordon",
 	"title": "Web Developer",
 	"department": "Biggens Analytics"
 }
+
 DELETE http://localhost:8080/users/10
 
 http://localhost:8080/users/all
 
 
-2. dockerized/containerized gordonfrog using mysql testing:
+dockerized/containerized gordonfrog using mysql testing:
+
 localhost
+
 http://localhost/swagger-ui.html#/user45controller
+
 http://localhost/users/all
+
 http://localhost/users?name=Phil%20Herold
+
 http://localhost/users/1
+
 POST http://localhost/users
 {
     "id": 4,
@@ -37,58 +50,93 @@ POST http://localhost/users
 	"title": "Web Developer",
 	"department": "BigData Analytics"
 }
+
 PUT http://localhost/users/4
 {
     "name": "frogger",
 	"title": "Web",
 	"department": "Big D Analytics"
 }
+
 DELETE http://localhost/users/4
 
 http://localhost/users/all
 
 docker ps -aq
+
 docker stop $(docker ps -aq)
+
 docker rm $(docker ps -aq)
+
 docker system prune --all --force --volumes
+
 docker rmi -f $(docker images -qa)
+
 docker network rm $(docker network ls | grep "bridge" | awk '/ / { print $1 }')
 
-Create common network for all services
+Create common network for all services: 
+
 docker network create gordonfrog-network
 
-Start mysql
+Start mysql:
+
 docker container run -v mydata:/var/lib/mysql --network gordonfrog-network --name mysql -e "MYSQL_ROOT_PASSWORD=password" -e "MYSQL_DATABASE=gordonfrog" -d mysql:5
+
 docker exec -it mysql bash
+
 mysql -uroot -ppassword
+
 show databases;
 
 Start webapp
+
 mvn clean package
+
 docker build -t gordonfrog:1 .
+
 docker run --network gordonfrog-network --name gordonfrog-webapp -e "SPRING_PROFILES_ACTIVE=docker" -d -p 80:9090 gordonfrog:1         
+
 docker logs -f gordonfrog-webapp
+
 localhost
+
 docker exec -it mysql bash
+
 mysql -uroot -ppassword
+
 show databases;
+
 use gordonfrog
+
 show tables;
+
 select * from user;
 
 
-3. kubernets using mongodb testing:
+kubernets using mongodb testing:
 
 eval $(minikube docker-env)
+
 docker images
+
 mvn clean package
+
 docker build -t gordonfrog:1 .
+
 docker images
+
 kubectl get all
+
 kubectl apply -f mongo-stack.yaml
+
 kubectl apply -f services.yaml
+
 kubectl get all
+
 minikube ip
+
 minikube service gordonfrog-webapp --url
+
 http://192.168.99.101:30080
+
 works!
